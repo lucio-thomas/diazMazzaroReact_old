@@ -1,10 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
+//import Navbar from 'react-bootstrap/Navbar';
+import NavBar from './components/Navbar/NavBar';
+
 function App() {
   return (
     <div className="App">
+      
+        <NavBar/>
+      
       <header className="App-header">
+        <h1 style={{color: "#61DAFB"}} onClick= {() => console.log("Welcome/Bienvenid")}>
+          Welcome to ReactShop
+        </h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +27,9 @@ function App() {
           Learn React
         </a>
       </header>
+      
     </div>
+    
   );
 }
 
