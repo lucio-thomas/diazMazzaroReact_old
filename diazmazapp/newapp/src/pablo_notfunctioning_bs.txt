@@ -1,0 +1,31 @@
+            
+             let model = function() {
+    this.products = [];
+    this.loading = true;
+    this.fetchProducts = function (params){
+      console.log('provisional text which is then replaced by the catalog')
+        
+      console.log(this.products)
+      
+        console.log(this.products)
+          getItem
+              .then(result =>  {this.products = result; console.log(result)})
+              .catch(err => console.log(err))
+              .finally(() => {this.loading  =false; console.log("Loaded")})
+      
+    }
+  }
+
+  let myModel = new model();
+            
+            
+            
+            
+            
+            
+            
+            
+            <ItemListContainer model={myModel} />
+            
+            
+            <ItemList productos={props.model.products} loading={props.model.loading} />

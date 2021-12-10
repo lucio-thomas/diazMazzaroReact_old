@@ -15,17 +15,19 @@ function NavBar(){
             />
             <script
                 src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-                crossorigin></script>
+                crossOrigin></script>
 
-            <h1 style={{marginLeft: "20px"}}>
+            <h1 style={{marginLeft: "20px", paddingTop:"20px"}}>
                 ReactShop
             </h1>
-            <ul style= {{marginLeft: "20px", fontSize:"24px", display: "inline-block"}}>
-                <li><a className="" href="src/index.js" rel=""><Button variant="info">Home</Button></a></li>
-                <li><a className="" href="#" rel=""><Button variant="info">Contact</Button></a></li>
-                <li><a className="" href="#" rel=""><Button variant="info">About</Button></a></li>
-                <li><a className="" href="#" rel=""><CartWidget/></a></li>
-            </ul>
+            <center>
+                <ul style= {{marginLeft: "20px", fontSize:"24px", display: "inline-block"}}>
+                    <li><a className="" href="#" rel=""><Button variant="info">Home</Button></a></li>
+                    <li><a className="" href="#" rel=""><Button variant="info">Contact</Button></a></li>
+                    <li><a className="" href="#" rel=""><Button variant="info">About</Button></a></li>
+                    <li><a className="" href="#" rel=""><CartWidget/></a></li>
+                </ul>
+            </center>
         </div>
     )
 }
